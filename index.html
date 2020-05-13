@@ -56,11 +56,11 @@
         <source src="img/bg_full.mp4" type="video/mp4">
       </video>
 
-      <div class="container masonry-grid">
+      <div class="container flex-grid">
         <div class="grid-sizer"></div>
 
         <div class="grid-item">
-          <a onclick="playStory('freddie-story')" class="planet planet-pk2" data-toggle="collapse" aria-expanded="false" aria-controls="story-controls-freddie">
+          <a data-action="freddie-story" class="planet planet-pk2">
             <p class="name">Freddie</p>
           </a>
 
@@ -71,7 +71,7 @@
         </div>
 
         <div class="grid-item">
-          <a onclick="playStory('jamil-story')" class="planet planet-pr3">
+          <a data-action="jamil-story" class="planet planet-pr3">
             <p class="name">Jamil</p>
           </a>
 
@@ -82,7 +82,7 @@
         </div>
 
         <div class="grid-item">
-          <a onclick="playStory('sally-story')" class="planet planet-g3">
+          <a data-action="sally-story" class="planet planet-g3">
             <p class="name">Sally</p>
           </a>
 
@@ -93,7 +93,7 @@
         </div>
 
         <div class="grid-item">
-          <a onclick="playStory('james-bond-story')" class="planet planet-r4">
+          <a data-action="james-bond-story" class="planet planet-r4">
             <p class="name">James Bond</p>
           </a>
 
@@ -141,7 +141,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="node_modules/masonry-layout/dist/masonry.pkgd.js"></script>
+  <script src="node_modules/isotope-layout/dist/isotope.pkgd.js"></script>
+  <script src="node_modules/bounce.js/bounce.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 </body>

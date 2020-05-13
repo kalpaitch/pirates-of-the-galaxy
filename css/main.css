@@ -95,9 +95,32 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Animation events
    ========================================================================== */
 
+/* Generated with Bounce.js. Edit at http://bouncejs.com#%7Bs%3A%5B%7BT%3A%22c%22%2Ce%3A%22b%22%2Cd%3A1600%2CD%3A0%2Cf%3A%7Bx%3A1%2Cy%3A1%7D%2Ct%3A%7Bx%3A2%2Cy%3A2%7D%2Cs%3A2%2Cb%3A6%7D%5D%7D */
+
+@keyframes animation {
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.61% { transform: matrix3d(1.443, 0, 0, 0, 0, 1.443, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.91% { transform: matrix3d(1.582, 0, 0, 0, 0, 1.582, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.21% { transform: matrix3d(1.622, 0, 0, 0, 0, 1.622, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.12% { transform: matrix3d(1.586, 0, 0, 0, 0, 1.586, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  20.92% { transform: matrix3d(1.527, 0, 0, 0, 0, 1.527, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.82% { transform: matrix3d(1.485, 0, 0, 0, 0, 1.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.63% { transform: matrix3d(1.473, 0, 0, 0, 0, 1.473, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  43.94% { transform: matrix3d(1.506, 0, 0, 0, 0, 1.506, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.36% { transform: matrix3d(1.499, 0, 0, 0, 0, 1.499, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  74.77% { transform: matrix3d(1.5, 0, 0, 0, 0, 1.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.19% { transform: matrix3d(1.5, 0, 0, 0, 0, 1.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1.5, 0, 0, 0, 0, 1.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 
 #planets .video {
   position: fixed;
@@ -118,30 +141,9 @@ textarea {
   z-index: 2;
 }
 
-@media (min-width: 576px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-    position: relative;
-  }
-}
-@media (min-width: 768px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .grid-sizer,
-  .grid-item {
-    width: 33.3%;
-  }
-}
-@media (min-width: 1200px) {
-  .grid-sizer,
-  .grid-item {
-    width: 25%;
-  }
+.grid-item {
+  width: 330px;
+  padding-bottom: 35px;
 }
 
 .planet {
@@ -153,6 +155,9 @@ textarea {
   width: 200px;
   cursor: pointer;
 }
+.planet.active {
+  animation: animation 1600ms linear both;
+}
 .planet .name {
   font-family: aviano-future, sans-serif;
   font-weight: 700;
@@ -162,6 +167,9 @@ textarea {
   text-align: center;
   padding-top: 175px;
   margin-bottom: 0;
+}
+.planet.active .name {
+  padding-top: 210px;
 }
 
 audio.story {
