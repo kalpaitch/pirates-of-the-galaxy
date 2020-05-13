@@ -11,9 +11,14 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    @import url("https://use.typekit.net/soq1gkl.css");
+  </style>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -54,8 +59,8 @@
       <div class="container masonry-grid">
         <div class="grid-sizer"></div>
 
-        <div class="media grid-item">
-          <a onclick="playStory('freddie-story')" class="planet planet-pk2">
+        <div class="grid-item">
+          <a onclick="playStory('freddie-story')" class="planet planet-pk2" data-toggle="collapse" aria-expanded="false" aria-controls="story-controls-freddie">
             <p class="name">Freddie</p>
           </a>
 
@@ -65,7 +70,7 @@
           </audio>
         </div>
 
-        <div class="media grid-item">
+        <div class="grid-item">
           <a onclick="playStory('jamil-story')" class="planet planet-pr3">
             <p class="name">Jamil</p>
           </a>
@@ -76,7 +81,7 @@
           </audio>
         </div>
 
-        <div class="media grid-item">
+        <div class="grid-item">
           <a onclick="playStory('sally-story')" class="planet planet-g3">
             <p class="name">Sally</p>
           </a>
@@ -87,7 +92,7 @@
           </audio>
         </div>
 
-        <div class="media grid-item">
+        <div class="grid-item">
           <a onclick="playStory('james-bond-story')" class="planet planet-r4">
             <p class="name">James Bond</p>
           </a>
@@ -98,13 +103,13 @@
           </audio>
         </div>
 
-        <div class="media grid-item">
+        <div class="grid-item">
           <a class="planet planet-y1">
             <p class="name">Linda</p>
           </a>
         </div>
 
-        <div class="media grid-item">
+        <div class="grid-item">
           <a class="planet planet-g1">
             <p class="name">Frank</p>
           </a>
