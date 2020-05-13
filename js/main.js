@@ -2,7 +2,7 @@ const isotopeOptions = {
     itemSelector: '.grid-item',
     percentPosition: true,
     masonry: {
-        columnWidth: 330
+        columnWidth: 260
     }
 };
 let grid = document.querySelector('.flex-grid');
