@@ -171,6 +171,12 @@ textarea {
 .planet.active .name {
   padding-top: 210px;
 }
+.planet .title {
+  font-family: aviano-future, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
 
 audio.story {
   display: block;
