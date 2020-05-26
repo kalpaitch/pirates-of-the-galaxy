@@ -121,6 +121,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.page-heading {
+  font-family: aviano-future, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
