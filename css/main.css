@@ -165,6 +165,7 @@ textarea {
 .grid-item {
   width: 260px;
   padding-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 .planet {
@@ -240,7 +241,7 @@ audio.story {
 
 .planet-b1 {
   background-position: -400px 0;
-  margin-top: 130px;
+  margin-top: 30px;
 }
 .planet-b2 {
   background-position: -400px -200px;
